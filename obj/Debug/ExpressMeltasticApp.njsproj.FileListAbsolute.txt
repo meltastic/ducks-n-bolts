@@ -1,0 +1,1 @@
+c:\users\mhargis\documents\visual studio 2013\Projects\ExpressMeltasticApp\ExpressMeltasticApp\bin\Microsoft.NodejsTools.WebRole.dll

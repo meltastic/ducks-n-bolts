@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h2 #{title}.
+  h3 #{message}
+  address
+    | Bonsall Soap House
+    br
+    | 133 East Mountain Road
+    br
+    | Bonsall, CA 92003
+    br
+    abbr(title='Phone') P: 
+    | 760.112.3580
+
+  address
+    strong Support: 
+    a(href='mailto:Support@example.com') Support@ducksandbolts.com
+    br
+    strong Word Engineers: 
+    a(href='mailto:Marketing@example.com') WordGuys@ducksandbolts.com

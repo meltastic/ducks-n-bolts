@@ -1,0 +1,15 @@
+{
+  "name": "ExpressMeltasticApp",
+  "version": "0.0.0",
+  "description": "ExpressMeltasticApp",
+  "main": "app.js",
+  "author": {
+    "name": "mhargis",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "stylus": "*"
+  }
+}

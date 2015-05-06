@@ -1,0 +1,26 @@
+﻿extends layout
+
+block content
+  .jumbotron
+    h1 Ducks and Bolts
+    p.lead Start typing to learn cool words
+    #the-basics
+        input.typeahead.form-control(id="word-search", type="text", placeholder="My New Words")
+        p.duck-pad
+            a.btn.btn-primary.btn-large.duck-btn(id="search-btn") Search &raquo;
+  .row
+    .col-md-4
+      h2 Who are we? And why?
+      p We are word enthusiasts, that's who! Inspired by modern-age tech savvy toddlers eager to learn, we've got a fun learning tool for your little one.
+      p
+        a.btn.btn-default(href='#') Learn more &raquo;
+    .col-md-4
+      h2 Psst... Mom, Dad...
+      p Check it out! We have some bizarre yet sophisticated words for you to learn too. Oh yes we do. Curious? We thought so. Head this way!
+      p
+        a.btn.btn-default(href='#') Learn more &raquo;
+    .col-md-4
+      h2 The Word Project
+      p Are you intrigued by words? A firm believer that we have way too many unnecessary words in the English language? But it's cool anyway! Join us.
+      p
+        a.btn.btn-default(href='#') Learn more &raquo;

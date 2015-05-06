@@ -1,0 +1,11 @@
+﻿extends layout
+
+block content
+    div.my-word
+    .jumbotron.my-word
+        h3 #{msg}
+        h2.letter #{letter}
+        h2.word-text #{word}
+        img(src="#{img}")
+        p.duck-pad
+            a.btn.btn-primary.btn-large.duck-btn(href="/") Go Search Again 
