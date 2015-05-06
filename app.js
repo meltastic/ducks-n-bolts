@@ -11,6 +11,7 @@ var _ = require('underscore');
 var words = require('./api/words');
 
 var app = express();
+var port = process.env.PORT || 3000;
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -96,10 +97,6 @@ app.get('/search/:word?', function (req, res) {
     res.render('myword', resObj);
 });
 
-//http.createServer(app).listen(app.get('port'), function () {
-//    console.log('Express server listening on port ' + app.get('port'));
-//});
-
-http.createServer(app).listen(process.env.PORT, function () {
+http.createServer(app).listen(port, function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
