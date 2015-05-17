@@ -79,16 +79,22 @@ app.get('/search/:word?', function (req, res) {
         
         if (sameFirstLetter && !_.isArray(sameFirstLetter)) {
             resObj.word = sameFirstLetter.name;
+            resObj.img = sameFirstLetter.img;
+            resObj.letter = sameFirstLetter.letter;
             resObj.msg = "We couldn't find a word that matches your search, but here's a word that starts with the same letter!";
         } else if (_.isArray(sameFirstLetter)) {
             // if there's more than one word returned, grab a random word from that list
             sameFirstLetter = _.sample(sameFirstLetter);
             resObj.word = sameFirstLetter.name;
+            resObj.img = sameFirstLetter.img;
+            resObj.letter = sameFirstLetter.letter;
             resObj.msg = "We couldn't find a word that matches your search, but here's a word that starts with the same letter!";
         } else {
             // if no match then grab a random word and return a special message
             var randomWord = _.sample(words);
             resObj.word = randomWord.name
+            resObj.img = randomWord.img;
+            resObj.letter = randomWord.letter;
             resObj.msg = "We couldn't find a word that matches your search, but here's a cool word we like!";
         }
     }
